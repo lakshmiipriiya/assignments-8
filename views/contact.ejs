@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | <%= portfolio.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .contact {
+            background-image: url("<%= portfolio.contactBackground %>");
+        }
+    </style>
+</head>
+<body class="contact">
+    <div class="contact-content">
+        <h1>Contact Me</h1>
+        <p>If you want to get in touch with me</p>
+
+        <div class="contact-box">
+            <% if (portfolio.phone) { %>
+                <p>
+                    <b>Phone:</b>
+                    <a href="tel:<%= portfolio.phone %>"><%= portfolio.phone %></a>
+                </p>
+            <% } %>
+
+            <% if (portfolio.email) { %>
+                <p>
+                    <b>Email:</b>
+                    <a href="mailto:<%= portfolio.email %>"><%= portfolio.email %></a>
+                </p>
+            <% } %>
+        </div>
+
+        <div class="buttons">
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+        </div>
+    </div>
+</body>
+</html>

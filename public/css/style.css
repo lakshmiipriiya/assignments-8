@@ -1,0 +1,179 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Buttons */
+
+.buttons {
+    margin-top: 50px;
+}
+
+.buttons a {
+    background-color: #ffffdd;
+    color: black;
+
+    padding: 12px 30px;
+    margin: 20px;
+
+    border-radius: 20px;
+}
+
+
+/* HOME PAGE */
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home-video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+.home-content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.home-content h1 {
+    font-family: Georgia, serif;
+
+    font-size: 70px;
+    font-style: italic;
+
+    color: #ffffdd;
+}
+
+.home-content p {
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+
+/* ABOUT PAGE */
+
+.about {
+    background-color: black;
+    color: #ffffdd;
+}
+
+.about-content {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+}
+
+.about-text {
+    width: 450px;
+}
+
+.about-text h1 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+.about-content img {
+    width: 420px;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+
+/* CONTACT PAGE */
+
+.contact {
+    height: 100vh;
+
+    background-image: url("../images/contact.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-content {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.contact-content h1 {
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    color: #ffffdd;
+
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    background-color: #ffffdd;
+
+    color: black;
+
+    width: 450px;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    border-radius: 15px;
+}
+
+.contact-box p {
+    margin: 15px;
+}
+
+.contact-box a {
+    color: black;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | <%= portfolio.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h1><%= portfolio.aboutHeading %></h1>
+
+            <% (portfolio.aboutParagraphs || []).forEach(function(paragraph) { %>
+                <p><%= paragraph %></p>
+            <% }); %>
+
+            <div class="buttons">
+                <a href="/">Home</a>
+                <a href="/contact">Contact Me</a>
+            </div>
+        </div>
+
+        <img src="<%= portfolio.photo %>" alt="Photo of <%= portfolio.name %>">
+    </div>
+</body>
+</html>
